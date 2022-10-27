@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <nav>
-        <a href="social">Social Feed</a> |
+      <nav className="navbar">
+        <a href="#social">Social Feed</a> |
       </nav>
       <div className="center">
          <div className="col-md-8">
