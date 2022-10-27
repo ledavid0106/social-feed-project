@@ -19,11 +19,19 @@ const AddEntryForm = (props) => {
 
     return ( 
         <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input  type="text" value={name} onChange={(event)=>setName(event.target.value)}></input>
-            <label>Post</label>
-            <input  type="text" value={post} onChange={(event)=>setPost(event.target.value)}></input>
-            <button type="submit">Create</button>
+            <table>
+                <tbody>
+                    <tr>
+                        <label>Name</label>
+                        <input  type="text" value={name} onChange={(event)=>setName(event.target.value)}></input>
+                    </tr>
+                    <tr>
+                        <label>Post</label>
+                        <input  type="text" value={post} onChange={(event)=>setPost(event.target.value)}></input>
+                        <button type="submit">Create</button>   
+                    </tr>
+                </tbody>
+            </table>
         </form>
      );
 }

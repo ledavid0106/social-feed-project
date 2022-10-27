@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
 import AddEntryForm from './Components/AddEntry/AddEntryForm';
+import "./App.css"
 
 function App() {
 
@@ -15,12 +16,20 @@ function App() {
   }
 
   return (
-    <div >
+    <div className="container-fluid">
       <nav>
         <a href="social">Social Feed</a> |
       </nav>
-      <AddEntryForm addNewEntryProperty={addNewEntry}/>
-      <DisplayEntries parentEntries={entries}/>
+      <div className="center">
+         <div className="col-md-8">
+            <div className="border-box">
+              <AddEntryForm addNewEntryProperty={addNewEntry}/>
+            </div>
+            <div className="border-box">
+              <DisplayEntries parentEntries={entries}/>
+            </div>
+         </div>
+      </div>
 
 
     </div>
