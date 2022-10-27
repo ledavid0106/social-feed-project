@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-
+import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
 
 function App() {
 
-  const [entries, setEntries] = useState([])
+  const [entries, setEntries] = useState([{Name:"David", Post: "Second  Sky!"}
+  ])
 
   return (
     <div >
-      <h3>Hello World</h3>
+      <DisplayEntries parentEntries={entries}/>
+
+
     </div>
   );
 }
