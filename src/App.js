@@ -7,12 +7,19 @@ function App() {
   const [entries, setEntries] = useState([{Name:"David", Post: "Second  Sky!"}
   ])
 
+  function addNewEntry(entry) {
+    let tempEntries = [entry, ...entries];
+    setEntries(tempEntries);
+
+
+  }
+
   return (
     <div >
       <nav>
         <a href="social">Social Feed</a> |
       </nav>
-      <AddEntryForm />
+      <AddEntryForm addNewEntryProperty={addNewEntry}/>
       <DisplayEntries parentEntries={entries}/>
 
 

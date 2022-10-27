@@ -8,7 +8,12 @@ const AddEntryForm = (props) => {
     const [post, setPost] = useState("")
 
     function handleSubmit(event) {
-        event.preventDefault()
+        event.preventDefault();
+        let newEntry = {
+             Name: name,
+             Post: post,
+        }
+        props.addNewEntryProperty(newEntry)
     }
 
 
