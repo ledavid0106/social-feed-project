@@ -1,16 +1,16 @@
-
+import "./DisplayEntries.css"
 
 const DisplayEntries = (props) => {
     return ( 
     <table className="table">
-        <tbody>
-           <tr>
+        <tbody >
+           <tr >
             {props.parentEntries.map((entry)=> {
               return (
-                <tr>
-                    <tr><td>{entry.Name}</td></tr>
-                    <tr><td>{entry.Post}</td></tr>
-                    <tr>
+                <tr className="displays">
+                    <tr className="postname">{entry.Name}</tr>
+                    <tr className="posts">{entry.Post}</tr>
+                    <tr className="like">
                         <button type="submit">Like</button>
                         <button type="submit" onclick="myFunction(this, 'red')">Dislike</button>
                     </tr>

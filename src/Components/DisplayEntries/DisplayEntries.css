@@ -1,0 +1,20 @@
+.displays {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 15px;
+}
+.like {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.posts {
+    margin-bottom: 10px;
+}
+.postname {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
