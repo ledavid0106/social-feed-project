@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "./AddEntryForm.css"
 
 
 const AddEntryForm = (props) => {
@@ -27,8 +27,8 @@ const AddEntryForm = (props) => {
                     </tr>
                     <tr>
                         <label>Post</label>
-                        <input  type="text" value={post} onChange={(event)=>setPost(event.target.value)}></input>
-                        <button type="submit">Create</button>   
+                        <input  type="text" value={post} onChange={(event)=>setPost(event.target.value)}></input>  
+                        <button type="submit" className="round">Create</button>   
                     </tr>
                 </tbody>
             </table>
