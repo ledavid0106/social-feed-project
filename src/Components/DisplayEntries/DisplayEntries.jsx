@@ -1,6 +1,8 @@
 import "./DisplayEntries.css"
 import React, { useState } from 'react';
-
+import CustomButton from "./CustomButton/CustomButton";
+import DislikeButton
+ from "./DislikeButton/DislikeButton";
 const DisplayEntries = (props) => {
   return ( 
     <table className="table">
@@ -12,8 +14,8 @@ const DisplayEntries = (props) => {
                     <tr className="postname">{entry.Name}</tr>
                     <tr className="posts">{entry.Post}</tr>
                     <tr className="like">
-                      <button>Like</button>
-                      <button>Disike</button>
+                      <CustomButton message="Like"/>
+                      <DislikeButton message="Dislike"/>
                     </tr>
                 </tr>
               );
