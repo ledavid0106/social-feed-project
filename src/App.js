@@ -21,7 +21,7 @@ function App() {
         <a href="#social">Social Feed</a> |
       </nav>
       <div className="center">
-         <div className="col-md-8">
+         <div className="col-md-6">
             <div className="border-box">
               <AddEntryForm addNewEntryProperty={addNewEntry}/>
             </div>

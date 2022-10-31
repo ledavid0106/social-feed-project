@@ -1,4 +1,29 @@
 .round{
     border-radius: 15em;
     width: 7em;
+    margin: 8px;
+    background-color: rgb(19, 110, 229);
+    color: white;
+    margin-top: 135px;
+}
+
+.roundpost{
+    border-radius: 1em;
+    width: 30em;
+    height: 10em;
+    margin: 8px;
+    margin-left: 18px;
+}
+
+.roundname{
+    border-radius: 1em;
+    width: 7em;
+    margin: 8px;
+    width: 30em;
+}
+
+.name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

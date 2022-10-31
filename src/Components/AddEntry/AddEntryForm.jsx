@@ -21,14 +21,16 @@ const AddEntryForm = (props) => {
         <form onSubmit={handleSubmit}>
             <table>
                 <tbody>
-                    <tr>
-                        <label>Name</label>
-                        <input  type="text" value={name} onChange={(event)=>setName(event.target.value)}></input>
+                    <tr className="name">
+                        <label >Name</label>
+                        <input  type="text" className="roundname" value={name} onChange={(event)=>setName(event.target.value)}></input>
                     </tr>
-                    <tr>
-                        <label>Post</label>
-                        <input  type="text" value={post} onChange={(event)=>setPost(event.target.value)}></input>  
-                        <button type="submit" className="round">Create</button>   
+                    <tr className="name">
+                        <label >Post</label>
+                        <input  type="text" className="roundpost" value={post} onChange={(event)=>setPost(event.target.value)}></input> 
+                        <div>
+                            <button type="submit" className="round">Create</button>   
+                        </div> 
                     </tr>
                 </tbody>
             </table>
