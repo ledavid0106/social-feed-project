@@ -1,7 +1,8 @@
 import "./DisplayEntries.css"
+import React, { useState } from 'react';
 
 const DisplayEntries = (props) => {
-    return ( 
+  return ( 
     <table className="table">
         <tbody >
            <tr >
@@ -11,8 +12,8 @@ const DisplayEntries = (props) => {
                     <tr className="postname">{entry.Name}</tr>
                     <tr className="posts">{entry.Post}</tr>
                     <tr className="like">
-                        <button type="submit">Like</button>
-                        <button type="submit" onclick="myFunction(this, 'red')">Dislike</button>
+                      <button>Like</button>
+                      <button>Disike</button>
                     </tr>
                 </tr>
               );
@@ -24,3 +25,5 @@ const DisplayEntries = (props) => {
 }
  
 export default DisplayEntries;
+
+

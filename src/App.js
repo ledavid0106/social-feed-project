@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
 import AddEntryForm from './Components/AddEntry/AddEntryForm';
 import "./App.css"
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
@@ -17,9 +18,7 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <nav className="navbar">
-        <h4>Social <small className="text-muted">Feed</small></h4> |
-      </nav>
+      <NavBar/>
       <div className="center">
          <div className="col-md-6">
             <div className="border-box">
@@ -27,6 +26,7 @@ function App() {
             </div>
             <div className="border-box">
               <DisplayEntries parentEntries={entries}/>
+
             </div>
          </div>
       </div>
